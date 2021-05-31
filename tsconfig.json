@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": ".",
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "lib",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "types": [],
+    "typeRoots": ["./node_modules/@types"],
+    "lib": ["dom", "es2015", "es2016", "es2017"],
+    "declaration": true,
+    "declarationDir": "declaration"
+  },
+  "include": ["./src"],
+  "exclude": ["node_modules"]
+}
