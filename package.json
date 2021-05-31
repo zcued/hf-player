@@ -2,7 +2,7 @@
   "name": "hf-player",
   "version": "1.0.0",
   "description": "A video player based on H5 video",
-  "main": "index.js",
+  "main": "/lib/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/zcued/hf-player.git"
@@ -11,7 +11,8 @@
     "start": "webpack-dev-server --config ./webpack.config.js",
     "build": "rimraf lib && tsc && yarn copy-files",
     "copy-files": "cp ./src/index.css ./lib/index.css",
-    "lint": "eslint  --ext .tsx,.ts --fix ./src -c .eslintrc.js"
+    "lint": "eslint  --ext .tsx,.ts --fix ./src -c .eslintrc.js",
+    "prepublish": "yarn build"
   },
   "keywords": [
     "video",
@@ -20,10 +21,7 @@
   "author": "qiulijun",
   "license": "ISC",
   "files": [
-    "lib",
-    "package.json",
-    "LICENSE",
-    "README.md"
+    "lib"
   ],
   "peerDependencies": {
     "react": ">=17.0.2",
